@@ -121,13 +121,12 @@ footer {
     
 }
 /*About You styling*/
-#imgBio {
+.imgBio {
     float: left;
-    width: 150px;
-    height: 150px;
+    max-width: 20%;
+    height: auto;
     margin-top: 20px;
     margin-right: 20px;
-    padding: 5px;
 }
 
 p {
@@ -145,8 +144,8 @@ p {
 
 /*portfolio page content items*/
 .imgPortfolio {
-    width: 200px;
-    height: 150px; 
+    max-width: 100%;
+    height: 100%; 
 }
 
 .gallery {
