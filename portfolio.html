@@ -4,89 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chancy's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="container-fluid container-header">
+    <nav class="navbar navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <span class="navbar-brand mb-0 h1 text-white">Chancy Leath</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container container-main">
         <div class="row">
-            <div class="col-2">
+            <div class="col-sm-12">
+                <h1>Portfolio</h1>
             </div>
-            <div class="col-2 col-logo">
-                Chancy Leath
-            </div>
-            <div class="col-4">
-            </div>
-            <div class="col-2">
-                <nav class="navbar navbar-expand">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                        <a class="nav-item nav-link" href="./contact.html">Contact</a>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 colPortfolio">
+                <div class="gallery">
+                    <a href="#"><img class="imgPortfolio" src="./assets/images/internet-group-1.jpg" alt="interwebs"></a>
+                    <div class="desc">
+                        Hangman
                     </div>
-                </nav>
+                </div>
             </div>
-            <div class="col-2">
+
+            <div class="col-sm-3 colPortfolio">
+                <div class="gallery">
+                    <a href="#"><img class="imgPortfolio" src="./assets/images/dice.jpg" alt="dice"></a>
+                    <div class="desc">
+                        RPG Game
+                    </div>
+                </div>
+            </div>
+       </div>
+
+         <div class="row">
+            <div class="col-sm-3 colPortfolio">
+                <div class="gallery">
+                        <a href="#"><img class="imgPortfolio" src="./assets/images/laptop1.jpg" alt="laptop"></a>
+                    <div class="desc">
+                        Trivia Game
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 colPortfolio">
+                    <div class="gallery">
+                        <a href="#"><img class="imgPortfolio" src="./assets/images/internet.jpg" alt="internet"></a>
+                        <div class="desc">
+                            Rutgers Info Widget
+                        </div>
+                    </div>
             </div>
         </div>
-     </div> 
 
-    <section class="container container-main">
-        <h1>Portfolio</h1>
-        <!--<div class="wrapper">-->
-
-            <div class="gallery">
-                <a class="linkGallery" href="#">
-                    <img class="img-fluid imgPortfolio" src="./assets/images/internet-group-1.jpg" alt="interwebs">
-                </a>
-                <div class="desc">
-                    Hangman
-                </div>
+        <div class="row">
+            <div class="col-sm-3 colPortfolio">
+                <div class="gallery">
+                    <a href="#"><img class="imgPortfolio" src="./assets/images/morkie.jpg" alt="dog"></a>
+                    <div class="desc">
+                        Rock Paper Scissors
+                    </div>
+                </div> 
             </div>
-        
-            <div class="gallery">
-                <a class="linkGallery" href="#">
-                    <img class="imgPortfolio" src="./assets/images/dice.jpg" alt="dice">
-                </a>
-                <div class="desc">
-                    RPG Game
-                </div>
-            </div>
-            
-            <div class="gallery">
-                    <a class="linkGallery" href="#">
-                        <img class="imgPortfolio" src="./assets/images/laptop1.jpg" alt="laptop">
-                    </a>
-                <div class="desc">
-                    Trivia Game
-                </div>
-            </div>
-            
-            <div class="gallery">
-                <a class="linkGallery" href="#">
-                    <img class="imgPortfolio" src="./assets/images/internet.jpg" alt="internet">
-                </a>
-                <div class="desc">
-                    Rutgers Info Widget
-                </div>
-            </div>
-            
-            <div class="gallery">
-                <a class="linkGallery" href="#">
-                    <img class="imgPortfolio" src="./assets/images/morkie.jpg" alt="dog">
-                </a>
-                <div class="desc">
-                    Rock Paper Scissors
-                </div>
-            </div> 
         </div>
-    </section>
+    </div>
 
-    <footer>
-        Copyright &copy; 2018
-    </footer>
+    <div class="container-fluid container-footer">
+            Copyright &copy; 2018
+    </div>
 </body>
 
 </html>

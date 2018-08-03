@@ -4,54 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Chancy Leath</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="container-fluid container-header">
+    <nav class="navbar navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <span class="navbar-brand mb-0 h1 text-white">Chancy Leath</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="container container-main">
         <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-2 col-logo">
-                Chancy Leath
-            </div>
-            <div class="col-4">
-            </div>
-            <div class="col-2">
-                <nav class="navbar navbar-expand">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                        <a class="nav-item nav-link" href="./contact.html">Contact</a>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-2">
+            <div class="col-sm-12">
+                <h1>About Me</h1>
             </div>
         </div>
-    </div>   
-        
-    <section class="container container-main">
-        <h1>About Me</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <img class="img-fluid imgBio" src="./assets/images/chancyleath.jpg" alt="Chancy Leath">
+            </div>
+            <div class="col-sm-9">
+                <p>I'm Chancy Leath. For the last 18 years I've worked as a product manager, project management support 
+                in the telecommunications industry. Now I'm looking to take on new challenges by learning web development.</p>
+                <p>On a personal note, I grew up on a 1000 acre ranch in northwestern Wyoming, and now find myself
+                owning a 10 acre mini ranch of my own (after many years of trying to escape country living, I longed for it!)
+                I joke that in my spare time that I'm going to start a mini cattle ranch (you know miniature cows, and 
+                wrangle them using a miniature horse and my 8 pound Morkie dog, named Charlemagne) but for now its just nice 
+                to have some wide open spaces.</p>
+                <p>Besides wanting to run a mini cattle ranch, I also enjoy camping, 4 wheeling, hiking, cooking, and 
+                reading (and drinking pina coladas, long walks on the beach...oh wait...).</p>
+            </div>
+        </div>
+    </div>
 
-        <img class="img-fluid imgBio" src="./assets/images/chancyleath.jpg" alt="Chancy Leath">
-        
-        <p>I'm Chancy Leath. For the last 18 years I've worked as a product manager, project management support 
-        in the telecommunications industry. Now I'm looking to take on new challenges by learning web development.</p>
-        <p>On a personal note, I grew up on a 1000 acre ranch in northwestern Wyoming, and now find myself
-        owning a 10 acre mini ranch of my own (after many years of trying to escape country living, I longed for it!)
-        I joke that in my spare time that I'm going to start a mini cattle ranch (you know miniature cows, and 
-        wrangle them using a miniature horse and my 8 pound Morkie dog, named Charlemagne) but for now its just nice 
-        to have some wide open spaces.</p>
-        <p>Besides wanting to run a mini cattle ranch, I also enjoy camping, 4 wheeling, hiking, cooking, and 
-        reading (and drinking pina coladas, long walks on the beach...oh wait...).</p>
-    </section>
-
-    <footer>
+    <div class="container-fluid fixed-bottom container-footer">
         Copyright &copy; 2018
-    </footer>
+    </div>
+
 </body>
 
 </html>
