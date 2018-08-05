@@ -35,8 +35,6 @@ body {
 
 /* footer-all pages*/
 .container-footer {
-    position: fixed;
-    bottom: 0%;
     padding-top: 35px;
     padding-bottom: 5px;
     border-top: #4aaaa5 solid 5px;
@@ -48,12 +46,10 @@ body {
 
 /* main content section-all pages*/
 .container-main {
-    position: relative;
-    top: 100px;
-    width: 67%;
+    top: 120px;
+    margin-bottom: 100px;
     border: #dddddd solid 1px;
     padding: 20px;
-    margin:0 auto;
     background: #ffffff;
     overflow: auto;
 }
@@ -69,7 +65,6 @@ h1 {
 }
 
 /*About You styling*/
-
 .imgBio {
     max-width: 100%;
     height: auto;
@@ -77,34 +72,34 @@ h1 {
 }
 
 /*portfolio page content items*/
-.imgPortfolio {
-    width: 100%;
-    height: 100%; 
+
+.card {
+    height: 100%;
 }
 
-.gallery {
-    width: 200px;
+.card-img-top {
+    width: 100%;
     height: 150px;
 }
 
-.colPortfolio {
+.card-body {
+    height: 50px;
+    background: #4aaaa5;
+}
+
+.card-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 16px;
+}
+
+.colPortfolio { 
     margin: 10px 0px 10px 0px;
 }
 
-.desc {
-    position: relative;
-    bottom: 50px;
-    width: 100%;
-    padding: 10px 0;
-    margin: 0;
-    background: #4aaaa5;
-    color: #ffffff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 14px;
-    text-align: center;
-}
+/* form content items */
 
-/*form content items*/
 form {
     padding-top: 10px;
 }
@@ -138,30 +133,15 @@ input[type=submit] {
     cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
-    /*to prevent footer from overlapping the main content boxt*/
-    .container-footer {
-        position: static;
-        bottom: 0%;
-        margin-top: 35%;
-    }
-}
-
-@media (max-width: 576px) {
-    /* to get the nav icon and header on same row*/
+    /* to get the nav icon and header on same row on small screens */
     .navbar-brand {
         margin-left: 0%;
     }
-    /*to make main content fill screen (no margins) on sm,xs devices*/
-    .container-main {
-        width: 100%;
-    }
-    
 }
 
 @media (min-width: 576px) {
-    /*to prevent the portfolio images from overlapping prior to moving to vertical format*/
+    /* to prevent the portfolio images from overlapping prior to moving to single column */
     .colPortfolio {
         max-width: 100%;
     }
